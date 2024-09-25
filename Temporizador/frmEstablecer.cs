@@ -12,6 +12,7 @@ namespace Temporizador
 {
     public partial class frmEstablecer : Form
     {
+        //Jose Luis Mota 00130925
         public List<int> tiempo = new List<int>();
         public frmEstablecer()
         {

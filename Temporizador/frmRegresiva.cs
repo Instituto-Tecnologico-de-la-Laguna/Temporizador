@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -28,8 +29,8 @@ namespace Temporizador
             if (resultado == DialogResult.OK)
             {
                 lblSegundos.Text = formatear(establecer.tiempo[0].ToString());
-                lblMinutos.Text = formatear( establecer.tiempo[1].ToString());
-                lblHoras.Text =formatear( establecer.tiempo[2].ToString());
+                lblMinutos.Text = formatear(establecer.tiempo[1].ToString());
+                lblHoras.Text = formatear(establecer.tiempo[2].ToString());
             }
         }
 
@@ -40,6 +41,22 @@ namespace Temporizador
                 return "0" + numero;
             }
             return numero;
+        }
+        bool bandera= false;
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (bandera == false)
+            {
+                bandera = true;
+                frmEstablecer.CheckForIllegalCrossThreadCalls = true;
+                btnControl.Text = "Detener";
+            }
+            else
+            {
+                bandera = false;
+                frmEstablecer.CheckForIllegalCrossThreadCalls = true;
+                btnControl.Text = "Iniciar";
+            }
         }
     }
 }

@@ -34,16 +34,17 @@
             lblMinutos = new Label();
             lblHoras = new Label();
             btnEstablecer = new Button();
-            button2 = new Button();
+            btnControl = new Button();
             SuspendLayout();
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 72F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(489, 14);
+            label5.Location = new Point(391, 11);
+            label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new Size(111, 191);
+            label5.Size = new Size(93, 159);
             label5.TabIndex = 11;
             label5.Text = ":";
             // 
@@ -51,9 +52,10 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 72F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(201, 14);
+            label4.Location = new Point(161, 11);
+            label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(111, 191);
+            label4.Size = new Size(93, 159);
             label4.TabIndex = 10;
             label4.Text = ":";
             // 
@@ -61,9 +63,10 @@
             // 
             lblSegundos.AutoSize = true;
             lblSegundos.Font = new Font("Segoe UI", 72F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblSegundos.Location = new Point(562, 27);
+            lblSegundos.Location = new Point(450, 22);
+            lblSegundos.Margin = new Padding(2, 0, 2, 0);
             lblSegundos.Name = "lblSegundos";
-            lblSegundos.Size = new Size(236, 191);
+            lblSegundos.Size = new Size(197, 159);
             lblSegundos.TabIndex = 9;
             lblSegundos.Text = "00";
             // 
@@ -71,9 +74,10 @@
             // 
             lblMinutos.AutoSize = true;
             lblMinutos.Font = new Font("Segoe UI", 72F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblMinutos.Location = new Point(296, 27);
+            lblMinutos.Location = new Point(237, 22);
+            lblMinutos.Margin = new Padding(2, 0, 2, 0);
             lblMinutos.Name = "lblMinutos";
-            lblMinutos.Size = new Size(236, 191);
+            lblMinutos.Size = new Size(197, 159);
             lblMinutos.TabIndex = 8;
             lblMinutos.Text = "00";
             // 
@@ -81,43 +85,48 @@
             // 
             lblHoras.AutoSize = true;
             lblHoras.Font = new Font("Segoe UI", 72F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblHoras.Location = new Point(-1, 27);
+            lblHoras.Location = new Point(-1, 22);
+            lblHoras.Margin = new Padding(2, 0, 2, 0);
             lblHoras.Name = "lblHoras";
-            lblHoras.Size = new Size(236, 191);
+            lblHoras.Size = new Size(197, 159);
             lblHoras.TabIndex = 7;
             lblHoras.Text = "00";
             // 
             // btnEstablecer
             // 
-            btnEstablecer.Location = new Point(281, 230);
+            btnEstablecer.Location = new Point(225, 184);
+            btnEstablecer.Margin = new Padding(2);
             btnEstablecer.Name = "btnEstablecer";
-            btnEstablecer.Size = new Size(112, 69);
+            btnEstablecer.Size = new Size(90, 55);
             btnEstablecer.TabIndex = 12;
             btnEstablecer.Text = "Establecer Tiempo";
             btnEstablecer.UseVisualStyleBackColor = true;
             btnEstablecer.Click += btnEstablecer_Click;
             // 
-            // button2
+            // btnControl
             // 
-            button2.Location = new Point(405, 230);
-            button2.Name = "button2";
-            button2.Size = new Size(112, 69);
-            button2.TabIndex = 13;
-            button2.Text = "Iniciar";
-            button2.UseVisualStyleBackColor = true;
+            btnControl.Location = new Point(324, 184);
+            btnControl.Margin = new Padding(2);
+            btnControl.Name = "btnControl";
+            btnControl.Size = new Size(90, 55);
+            btnControl.TabIndex = 13;
+            btnControl.Text = "Iniciar";
+            btnControl.UseVisualStyleBackColor = true;
+            btnControl.Click += button2_Click;
             // 
             // frmRegresiva
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 324);
-            Controls.Add(button2);
+            ClientSize = new Size(640, 259);
+            Controls.Add(btnControl);
             Controls.Add(btnEstablecer);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(lblSegundos);
             Controls.Add(lblMinutos);
             Controls.Add(lblHoras);
+            Margin = new Padding(2);
             Name = "frmRegresiva";
             Text = "Cuenta Regresiva";
             ResumeLayout(false);
@@ -132,6 +141,6 @@
         private Label lblMinutos;
         private Label lblHoras;
         private Button btnEstablecer;
-        private Button button2;
+        private Button btnControl;
     }
 }

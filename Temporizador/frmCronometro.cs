@@ -75,5 +75,10 @@ namespace Temporizador
             lblMinutos.Text = "00";
             lblHoras.Text = "00";
         }
+
+        private void frmCronometro_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

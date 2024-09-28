@@ -37,6 +37,7 @@
             btnEstablecer = new Button();
             butIniciar = new Button();
             tiempo = new System.Windows.Forms.Timer(components);
+            button1 = new Button();
             SuspendLayout();
             // 
             // label5
@@ -121,11 +122,22 @@
             tiempo.Interval = 1000;
             tiempo.Tick += tiempo_Tick;
             // 
+            // button1
+            // 
+            button1.Location = new Point(367, 138);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 41);
+            button1.TabIndex = 14;
+            button1.Text = "Restablecer";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // frmRegresiva
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(560, 194);
+            Controls.Add(button1);
             Controls.Add(butIniciar);
             Controls.Add(btnEstablecer);
             Controls.Add(label5);
@@ -150,5 +162,6 @@
         private Button btnEstablecer;
         private Button butIniciar;
         private System.Windows.Forms.Timer tiempo;
+        private Button button1;
     }
 }

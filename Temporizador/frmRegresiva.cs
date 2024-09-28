@@ -49,7 +49,7 @@ namespace Temporizador
             {
                 bandera = true;
                 tiempo.Enabled = true;
-               butIniciar.Text = "Detener";
+                butIniciar.Text = "Detener";
 
 
             }
@@ -98,6 +98,16 @@ namespace Temporizador
             {
                 lblSegundos.Text = formatear(segundos.ToString());
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            lblSegundos.Text = "00";
+            lblMinutos.Text = "00";
+            lblHoras.Text = "00";
+
+
+
         }
     }
 }

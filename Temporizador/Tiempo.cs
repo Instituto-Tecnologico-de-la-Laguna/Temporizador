@@ -8,5 +8,7 @@ namespace Temporizador
 {
     internal class Tiempo
     {
+
+        
     }
 }

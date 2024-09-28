@@ -36,6 +36,7 @@
             btnEstablecer = new Button();
             button2 = new Button();
             btnRegresiva = new Button();
+            btnReset = new Button();
             SuspendLayout();
             // 
             // label5
@@ -96,7 +97,7 @@
             // btnEstablecer
             // 
             btnEstablecer.Location = new Point(197, 138);
-            btnEstablecer.Margin = new Padding(2, 2, 2, 2);
+            btnEstablecer.Margin = new Padding(2);
             btnEstablecer.Name = "btnEstablecer";
             btnEstablecer.Size = new Size(78, 41);
             btnEstablecer.TabIndex = 12;
@@ -107,7 +108,7 @@
             // button2
             // 
             button2.Location = new Point(284, 138);
-            button2.Margin = new Padding(2, 2, 2, 2);
+            button2.Margin = new Padding(2);
             button2.Name = "button2";
             button2.Size = new Size(78, 41);
             button2.TabIndex = 13;
@@ -116,7 +117,7 @@
             // 
             // btnRegresiva
             // 
-            btnRegresiva.Location = new Point(235, 208);
+            btnRegresiva.Location = new Point(197, 201);
             btnRegresiva.Margin = new Padding(2);
             btnRegresiva.Name = "btnRegresiva";
             btnRegresiva.Size = new Size(78, 41);
@@ -125,11 +126,23 @@
             btnRegresiva.UseVisualStyleBackColor = true;
             btnRegresiva.Click += button1_Click;
             // 
+            // btnReset
+            // 
+            btnReset.Location = new Point(287, 201);
+            btnReset.Margin = new Padding(2);
+            btnReset.Name = "btnReset";
+            btnReset.Size = new Size(78, 41);
+            btnReset.TabIndex = 15;
+            btnReset.Text = "Reset";
+            btnReset.UseVisualStyleBackColor = true;
+            btnReset.Click += btnReset_Click;
+            // 
             // frmRegresiva
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(560, 288);
+            Controls.Add(btnReset);
             Controls.Add(btnRegresiva);
             Controls.Add(button2);
             Controls.Add(btnEstablecer);
@@ -138,7 +151,7 @@
             Controls.Add(lblSegundos);
             Controls.Add(lblMinutos);
             Controls.Add(lblHoras);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "frmRegresiva";
             Text = "Cuenta Regresiva";
             ResumeLayout(false);
@@ -155,5 +168,6 @@
         private Button btnEstablecer;
         private Button button2;
         private Button btnRegresiva;
+        private Button btnReset;
     }
 }

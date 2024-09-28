@@ -76,5 +76,14 @@ namespace Temporizador
 
             }
         }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            lblSegundos.Text = "00";
+            lblMinutos.Text = "00";
+            lblHoras.Text = "00";
+
+            MessageBox.Show("Datos reiniciados.");
+        }
     }
-}
+    }

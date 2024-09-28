@@ -1,0 +1,40 @@
+C:\Users\danie\source\repos\Temporizador1\Temporizador\bin\Debug\net8.0-windows\Temporizador.exe
+C:\Users\danie\source\repos\Temporizador1\Temporizador\bin\Debug\net8.0-windows\Temporizador.deps.json
+C:\Users\danie\source\repos\Temporizador1\Temporizador\bin\Debug\net8.0-windows\Temporizador.runtimeconfig.json
+C:\Users\danie\source\repos\Temporizador1\Temporizador\bin\Debug\net8.0-windows\Temporizador.dll
+C:\Users\danie\source\repos\Temporizador1\Temporizador\bin\Debug\net8.0-windows\Temporizador.pdb
+C:\Users\danie\source\repos\Temporizador1\Temporizador\obj\Debug\net8.0-windows\Temporizador.frmReloj.resources
+C:\Users\danie\source\repos\Temporizador1\Temporizador\obj\Debug\net8.0-windows\Temporizador.frmCronometro.resources
+C:\Users\danie\source\repos\Temporizador1\Temporizador\obj\Debug\net8.0-windows\Temporizador.frmEstablecer.resources
+C:\Users\danie\source\repos\Temporizador1\Temporizador\obj\Debug\net8.0-windows\Temporizador.frmRegresiva.resources
+C:\Users\danie\source\repos\Temporizador1\Temporizador\obj\Debug\net8.0-windows\Temporizador.csproj.GenerateResource.cache
+C:\Users\danie\source\repos\Temporizador1\Temporizador\obj\Debug\net8.0-windows\Temporizador.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danie\source\repos\Temporizador1\Temporizador\obj\Debug\net8.0-windows\Temporizador.AssemblyInfoInputs.cache
+C:\Users\danie\source\repos\Temporizador1\Temporizador\obj\Debug\net8.0-windows\Temporizador.AssemblyInfo.cs
+C:\Users\danie\source\repos\Temporizador1\Temporizador\obj\Debug\net8.0-windows\Temporizador.csproj.CoreCompileInputs.cache
+C:\Users\danie\source\repos\Temporizador1\Temporizador\obj\Debug\net8.0-windows\Temporizador.sourcelink.json
+C:\Users\danie\source\repos\Temporizador1\Temporizador\obj\Debug\net8.0-windows\Temporizador.dll
+C:\Users\danie\source\repos\Temporizador1\Temporizador\obj\Debug\net8.0-windows\refint\Temporizador.dll
+C:\Users\danie\source\repos\Temporizador1\Temporizador\obj\Debug\net8.0-windows\Temporizador.pdb
+C:\Users\danie\source\repos\Temporizador1\Temporizador\obj\Debug\net8.0-windows\Temporizador.genruntimeconfig.cache
+C:\Users\danie\source\repos\Temporizador1\Temporizador\obj\Debug\net8.0-windows\ref\Temporizador.dll
+C:\Users\yiyoa\OneDrive\Documentos\Semestre 6\Topicos\Temporizador\Temporizador\bin\Debug\net8.0-windows\Temporizador.exe
+C:\Users\yiyoa\OneDrive\Documentos\Semestre 6\Topicos\Temporizador\Temporizador\bin\Debug\net8.0-windows\Temporizador.deps.json
+C:\Users\yiyoa\OneDrive\Documentos\Semestre 6\Topicos\Temporizador\Temporizador\bin\Debug\net8.0-windows\Temporizador.runtimeconfig.json
+C:\Users\yiyoa\OneDrive\Documentos\Semestre 6\Topicos\Temporizador\Temporizador\bin\Debug\net8.0-windows\Temporizador.dll
+C:\Users\yiyoa\OneDrive\Documentos\Semestre 6\Topicos\Temporizador\Temporizador\bin\Debug\net8.0-windows\Temporizador.pdb
+C:\Users\yiyoa\OneDrive\Documentos\Semestre 6\Topicos\Temporizador\Temporizador\obj\Debug\net8.0-windows\Temporizador.frmReloj.resources
+C:\Users\yiyoa\OneDrive\Documentos\Semestre 6\Topicos\Temporizador\Temporizador\obj\Debug\net8.0-windows\Temporizador.frmCronometro.resources
+C:\Users\yiyoa\OneDrive\Documentos\Semestre 6\Topicos\Temporizador\Temporizador\obj\Debug\net8.0-windows\Temporizador.frmEstablecer.resources
+C:\Users\yiyoa\OneDrive\Documentos\Semestre 6\Topicos\Temporizador\Temporizador\obj\Debug\net8.0-windows\Temporizador.frmRegresiva.resources
+C:\Users\yiyoa\OneDrive\Documentos\Semestre 6\Topicos\Temporizador\Temporizador\obj\Debug\net8.0-windows\Temporizador.csproj.GenerateResource.cache
+C:\Users\yiyoa\OneDrive\Documentos\Semestre 6\Topicos\Temporizador\Temporizador\obj\Debug\net8.0-windows\Temporizador.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yiyoa\OneDrive\Documentos\Semestre 6\Topicos\Temporizador\Temporizador\obj\Debug\net8.0-windows\Temporizador.AssemblyInfoInputs.cache
+C:\Users\yiyoa\OneDrive\Documentos\Semestre 6\Topicos\Temporizador\Temporizador\obj\Debug\net8.0-windows\Temporizador.AssemblyInfo.cs
+C:\Users\yiyoa\OneDrive\Documentos\Semestre 6\Topicos\Temporizador\Temporizador\obj\Debug\net8.0-windows\Temporizador.csproj.CoreCompileInputs.cache
+C:\Users\yiyoa\OneDrive\Documentos\Semestre 6\Topicos\Temporizador\Temporizador\obj\Debug\net8.0-windows\Temporizador.sourcelink.json
+C:\Users\yiyoa\OneDrive\Documentos\Semestre 6\Topicos\Temporizador\Temporizador\obj\Debug\net8.0-windows\Temporizador.dll
+C:\Users\yiyoa\OneDrive\Documentos\Semestre 6\Topicos\Temporizador\Temporizador\obj\Debug\net8.0-windows\refint\Temporizador.dll
+C:\Users\yiyoa\OneDrive\Documentos\Semestre 6\Topicos\Temporizador\Temporizador\obj\Debug\net8.0-windows\Temporizador.pdb
+C:\Users\yiyoa\OneDrive\Documentos\Semestre 6\Topicos\Temporizador\Temporizador\obj\Debug\net8.0-windows\Temporizador.genruntimeconfig.cache
+C:\Users\yiyoa\OneDrive\Documentos\Semestre 6\Topicos\Temporizador\Temporizador\obj\Debug\net8.0-windows\ref\Temporizador.dll

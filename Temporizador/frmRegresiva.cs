@@ -62,7 +62,6 @@ namespace Temporizador
             }
 
         }
-
         private void tiempo_Tick(object sender, EventArgs e)
         {
             int segundos = int.Parse(lblSegundos.Text);
@@ -74,7 +73,7 @@ namespace Temporizador
                 minutos--;
                 if (minutos < 0)
                 {
-                    int horas = int.Parse(lblHoras.Text);
+                   int horas = int.Parse(lblHoras.Text);
                     horas--;
                     if (horas < 0)
                     {

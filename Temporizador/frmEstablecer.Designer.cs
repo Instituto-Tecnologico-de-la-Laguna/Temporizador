@@ -41,78 +41,88 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(11, 22);
+            label1.Location = new Point(8, 13);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(92, 25);
+            label1.Size = new Size(59, 15);
             label1.TabIndex = 0;
             label1.Text = "Segundos";
             // 
             // txtSegundos
             // 
-            txtSegundos.Location = new Point(11, 50);
+            txtSegundos.Location = new Point(8, 30);
+            txtSegundos.Margin = new Padding(2, 2, 2, 2);
             txtSegundos.Name = "txtSegundos";
-            txtSegundos.Size = new Size(150, 31);
+            txtSegundos.Size = new Size(106, 23);
             txtSegundos.TabIndex = 1;
             // 
             // txtMinutos
             // 
-            txtMinutos.Location = new Point(11, 125);
+            txtMinutos.Location = new Point(8, 75);
+            txtMinutos.Margin = new Padding(2, 2, 2, 2);
             txtMinutos.Name = "txtMinutos";
-            txtMinutos.Size = new Size(150, 31);
+            txtMinutos.Size = new Size(106, 23);
             txtMinutos.TabIndex = 2;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(11, 97);
+            label2.Location = new Point(8, 58);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(77, 25);
+            label2.Size = new Size(51, 15);
             label2.TabIndex = 2;
             label2.Text = "Minutos";
             // 
             // txtHoras
             // 
-            txtHoras.Location = new Point(11, 198);
+            txtHoras.Location = new Point(8, 119);
+            txtHoras.Margin = new Padding(2, 2, 2, 2);
             txtHoras.Name = "txtHoras";
-            txtHoras.Size = new Size(150, 31);
+            txtHoras.Size = new Size(106, 23);
             txtHoras.TabIndex = 3;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(11, 172);
+            label3.Location = new Point(8, 103);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Size = new Size(59, 25);
+            label3.Size = new Size(38, 15);
             label3.TabIndex = 4;
             label3.Text = "Horas";
             // 
             // btnAceptar
             // 
+            btnAceptar.BackColor = SystemColors.ActiveCaption;
             btnAceptar.DialogResult = DialogResult.OK;
-            btnAceptar.Location = new Point(214, 88);
+            btnAceptar.Location = new Point(150, 53);
+            btnAceptar.Margin = new Padding(2, 2, 2, 2);
             btnAceptar.Name = "btnAceptar";
-            btnAceptar.Size = new Size(111, 42);
+            btnAceptar.Size = new Size(78, 25);
             btnAceptar.TabIndex = 4;
             btnAceptar.Text = "Aceptar";
-            btnAceptar.UseVisualStyleBackColor = true;
+            btnAceptar.UseVisualStyleBackColor = false;
             btnAceptar.Click += btnAceptar_Click;
             // 
             // btnCancelar
             // 
+            btnCancelar.BackColor = SystemColors.ActiveCaption;
             btnCancelar.DialogResult = DialogResult.Cancel;
-            btnCancelar.Location = new Point(214, 137);
+            btnCancelar.Location = new Point(150, 82);
+            btnCancelar.Margin = new Padding(2, 2, 2, 2);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(111, 42);
+            btnCancelar.Size = new Size(78, 25);
             btnCancelar.TabIndex = 5;
             btnCancelar.Text = "Cancelar";
-            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.UseVisualStyleBackColor = false;
             btnCancelar.Click += btnCancelar_Click;
             // 
             // frmEstablecer
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(351, 255);
+            ClientSize = new Size(246, 153);
             Controls.Add(btnCancelar);
             Controls.Add(btnAceptar);
             Controls.Add(txtHoras);
@@ -121,6 +131,7 @@
             Controls.Add(label2);
             Controls.Add(txtSegundos);
             Controls.Add(label1);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "frmEstablecer";
             Text = "Tiempo";
             ResumeLayout(false);

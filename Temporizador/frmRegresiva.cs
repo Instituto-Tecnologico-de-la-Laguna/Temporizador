@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,14 +20,9 @@ namespace Temporizador
         {
             InitializeComponent();
         }
-        int segundo;
-        int minuto;
-        int hora;
         bool bandera = false;
-        frmEstablecer establecer = new frmEstablecer();
         private void btnEstablecer_Click(object sender, EventArgs e)
         {
-
             DialogResult resultado;
             frmEstablecer establecer = new frmEstablecer();
             resultado = establecer.ShowDialog();
@@ -48,44 +45,63 @@ namespace Temporizador
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int segundo = 0, minuto = 1, hora = 2;
-
-            if (minuto < 0)
+            if (bandera == false)
             {
-                hora--;
-                minuto = 59;
-                hora = establecer.tiempo[2];
+                bandera = true;
+                btnEstablecer.Enabled = true;
+                btnIniciar.Text = "Detener";
             }
-            if (segundo < 0)
+            else
             {
-                minuto--;
-                segundo = 59;
-                segundo = establecer.tiempo[0];
+                bandera = false;
+                btnEstablecer.Enabled = true;
+                btnIniciar.Text = "Iniciar";
+                
             }
-            
-            
-            if (segundo < 10)
-                lblSegundos.Text = "0" + segundo.ToString();
-            else
-                lblSegundos.Text = segundo.ToString();
-            
-            if (hora < 10)
-                lblHoras.Text = "0" + hora.ToString();
-            else
-                lblHoras.Text = hora.ToString();
-            
-            if(minuto < 10)
-                lblMinutos.Text = "0" + minuto.ToString();
-            else
-                lblMinutos.Text = minuto.ToString();
-            
-
-            if(hora == 0 && minuto == 0 && segundo == 0)
-            {
-                return;
-            }
-
-            segundo--;
         }
-    }
+        private void tiempo_Tick(object sender, EventArgs e)
+        {
+            int segundos = int.Parse(lblSegundos.Text);
+            btnEstablecer.Enabled = true;
+            segundos--;
+            if (segundos < 0)
+            {
+                int minutos = int.Parse(lblMinutos.Text);
+                minutos--;
+                if (minutos < 0)
+                {
+                    int horas = int.Parse(lblHoras.Text);
+                    horas--;
+                    if (horas < 0)
+                    {
+                        btnEstablecer.Enabled = false;
+                        MessageBox.Show("Tiempo Finalizado");
+                    }
+                    else
+                    {
+                        lblHoras.Text = formatear(horas.ToString());
+                        lblMinutos.Text = "59";
+                        lblSegundos.Text = "59";
+                    }
+                }
+                else
+                {
+                    lblMinutos.Text = formatear(minutos.ToString());
+                    lblSegundos.Text = "59";
+                }
+            }
+            else
+            {
+                lblSegundos.Text = formatear(segundos.ToString());
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            lblSegundos.Text = "00";
+            lblMinutos.Text = "00";
+            lblHoras.Text = "00";
+        }
+    } 
+    
 }

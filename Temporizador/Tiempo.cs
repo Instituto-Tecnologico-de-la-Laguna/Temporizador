@@ -8,5 +8,6 @@ namespace Temporizador
 {
     internal class Tiempo
     {
+        public List<int> tiempo = new List<int>();
     }
 }

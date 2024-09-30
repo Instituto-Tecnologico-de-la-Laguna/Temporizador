@@ -58,5 +58,6 @@ namespace Temporizador
                 btnControl.Text = "Iniciar";
             }
         }
-    }
-}
+    } 
+}//llllwqufh
+//haghahgjjagj

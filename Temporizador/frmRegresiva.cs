@@ -19,6 +19,8 @@ namespace Temporizador
             InitializeComponent();
         }
 
+        private int horas, minutos, segundos;
+
         private void btnEstablecer_Click(object sender, EventArgs e)
         {
 
@@ -30,6 +32,41 @@ namespace Temporizador
                 lblSegundos.Text = formatear(establecer.tiempo[0].ToString());
                 lblMinutos.Text = formatear( establecer.tiempo[1].ToString());
                 lblHoras.Text =formatear( establecer.tiempo[2].ToString());
+            }
+        }
+
+
+        private async void butIniciar_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado;
+            frmEstablecer establecer = new frmEstablecer();
+            resultado = establecer.ShowDialog();
+            if (resultado == DialogResult.OK)
+            {
+                lblSegundos.Text = formatear(establecer.tiempo[0].ToString());
+                lblMinutos.Text = formatear(establecer.tiempo[1].ToString());
+                lblHoras.Text = formatear(establecer.tiempo[2].ToString());
+
+                int totalSegundos = horas * 3600 + minutos * 60 + segundos;
+
+                while (totalSegundos > 0)
+                {
+                    await Task.Delay(1000);
+
+                    totalSegundos--;
+                    //
+                    //Convertir
+                    horas = totalSegundos / 3600;
+                    minutos = (totalSegundos % 3600) / 60;
+                    segundos = totalSegundos % 60;
+
+                    lblSegundos.Text = formatear(segundos.ToString());
+                    lblMinutos.Text = formatear(minutos.ToString());
+                    lblHoras.Text = formatear(horas.ToString());
+                }
+
+                MessageBox.Show("Tiempo Finalizado.");
+
             }
         }
 

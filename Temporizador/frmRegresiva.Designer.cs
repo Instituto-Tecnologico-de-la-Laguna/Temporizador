@@ -35,6 +35,7 @@
             lblHoras = new Label();
             btnEstablecer = new Button();
             butIniciar = new Button();
+            butReset = new Button();
             SuspendLayout();
             // 
             // label5
@@ -95,7 +96,7 @@
             // btnEstablecer
             // 
             btnEstablecer.Location = new Point(197, 138);
-            btnEstablecer.Margin = new Padding(2, 2, 2, 2);
+            btnEstablecer.Margin = new Padding(2);
             btnEstablecer.Name = "btnEstablecer";
             btnEstablecer.Size = new Size(78, 41);
             btnEstablecer.TabIndex = 12;
@@ -106,18 +107,28 @@
             // butIniciar
             // 
             butIniciar.Location = new Point(284, 138);
-            butIniciar.Margin = new Padding(2, 2, 2, 2);
+            butIniciar.Margin = new Padding(2);
             butIniciar.Name = "butIniciar";
             butIniciar.Size = new Size(78, 41);
             butIniciar.TabIndex = 13;
             butIniciar.Text = "Iniciar";
             butIniciar.UseVisualStyleBackColor = true;
             // 
+            // butReset
+            // 
+            butReset.Location = new Point(429, 161);
+            butReset.Name = "butReset";
+            butReset.Size = new Size(75, 23);
+            butReset.TabIndex = 14;
+            butReset.Text = "Reset";
+            butReset.UseVisualStyleBackColor = true;
+            // 
             // frmRegresiva
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(560, 194);
+            Controls.Add(butReset);
             Controls.Add(butIniciar);
             Controls.Add(btnEstablecer);
             Controls.Add(label5);
@@ -125,7 +136,7 @@
             Controls.Add(lblSegundos);
             Controls.Add(lblMinutos);
             Controls.Add(lblHoras);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "frmRegresiva";
             Text = "Cuenta Regresiva";
             ResumeLayout(false);
@@ -141,5 +152,6 @@
         private Label lblHoras;
         private Button btnEstablecer;
         private Button butIniciar;
+        private Button butReset;
     }
 }

@@ -84,7 +84,7 @@ namespace Temporizador
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            // Detener el temporizador y reiniciar valores
+            // Detener el temporizador y reiniciar sus valores
             enEjecucion = false;
             tiempoRestante = 0;
             if (hiloTemporizador != null && hiloTemporizador.IsAlive)

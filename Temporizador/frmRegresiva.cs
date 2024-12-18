@@ -24,7 +24,7 @@ namespace Temporizador
 
             // Configuración del temporizador
             timer1 = new Timer();
-            timer1.Interval = 1000; // Intervalo de 1 segundo
+            timer1.Interval = 300; // Intervalo de 1 segundo
             timer1.Tick += Timer_Tick; // Asociamos el evento Timer_Tick al temporizador
         }
 

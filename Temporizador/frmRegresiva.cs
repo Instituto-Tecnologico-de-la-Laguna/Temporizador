@@ -42,22 +42,63 @@ namespace Temporizador
             }
             return numero;
         }
-        bool bandera= false;
+        bool bandera = false;
         private void button2_Click(object sender, EventArgs e)
         {
             if (bandera == false)
             {
                 bandera = true;
                 frmEstablecer.CheckForIllegalCrossThreadCalls = true;
-                btnControl.Text = "Detener";
+                btnIniciar.Text = "Detener";
             }
             else
             {
                 bandera = false;
                 frmEstablecer.CheckForIllegalCrossThreadCalls = true;
-                btnControl.Text = "Iniciar";
+                btnIniciar.Text = "Iniciar";
             }
         }
-    } 
-}//llllwqufh
-//haghahgjjagj
+        
+        
+        private void tiempo_Tick(object sender, EventArgs e)
+        {
+            int segundos = int.Parse(lblSegundos.Text);
+            
+            //btnIniciar.Enabled = true;//
+            segundos--;
+            if (segundos < 0)
+            {
+                int minutos = int.Parse(lblMinutos.Text);
+                minutos--;
+                if (minutos < 0)
+                {
+                    int horas = int.Parse(lblHoras.Text);
+                    horas--;
+                    if (horas < 0)
+                    {
+                        btnIniciar.Enabled = false;//
+                        MessageBox.Show("Tiempo Finalizado");
+                        //song.Ctlcontrols.stop();
+
+                    }
+                    else
+                    {
+                        lblHoras.Text = formatear(horas.ToString());
+                        lblMinutos.Text = "59";
+                        lblSegundos.Text = "59";
+                    }
+                }
+                else
+                {
+                    lblMinutos.Text = formatear(minutos.ToString());
+                    lblSegundos.Text = "59";
+                }
+            }
+            else
+            {
+                lblSegundos.Text = formatear(segundos.ToString());
+            }
+        }
+    }
+}
+           

@@ -34,5 +34,7 @@ namespace Temporizador
         {
             this.Close();
         }
+
+
     }
 }

@@ -34,7 +34,7 @@
             lblMinutos = new Label();
             lblHoras = new Label();
             btnEstablecer = new Button();
-            btnControl = new Button();
+            btnIniciar = new Button();
             SuspendLayout();
             // 
             // label5
@@ -103,23 +103,23 @@
             btnEstablecer.UseVisualStyleBackColor = true;
             btnEstablecer.Click += btnEstablecer_Click;
             // 
-            // btnControl
+            // btnIniciar
             // 
-            btnControl.Location = new Point(324, 184);
-            btnControl.Margin = new Padding(2);
-            btnControl.Name = "btnControl";
-            btnControl.Size = new Size(90, 55);
-            btnControl.TabIndex = 13;
-            btnControl.Text = "Iniciar";
-            btnControl.UseVisualStyleBackColor = true;
-            btnControl.Click += button2_Click;
+            btnIniciar.Location = new Point(324, 184);
+            btnIniciar.Margin = new Padding(2);
+            btnIniciar.Name = "btnIniciar";
+            btnIniciar.Size = new Size(90, 55);
+            btnIniciar.TabIndex = 13;
+            btnIniciar.Text = "Iniciar";
+            btnIniciar.UseVisualStyleBackColor = true;
+            btnIniciar.Click += button2_Click;
             // 
             // frmRegresiva
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(640, 259);
-            Controls.Add(btnControl);
+            Controls.Add(btnIniciar);
             Controls.Add(btnEstablecer);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -141,6 +141,6 @@
         private Label lblMinutos;
         private Label lblHoras;
         private Button btnEstablecer;
-        private Button btnControl;
+        private Button btnIniciar;
     }
 }
